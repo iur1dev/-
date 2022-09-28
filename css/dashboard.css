@@ -1,0 +1,152 @@
+:root {
+  --h-menu: 3.5rem;
+  --h-menu-p: calc(var(--h-menu) + 0.25rem);
+}
+
+body {
+  font-size: .875rem;
+}
+
+.button-w {
+  font-size: .825rem !important;
+  font-family: monospace !important;
+}
+
+.button-d {
+  font-size: .825rem !important;
+  font-family: monospace !important;
+}
+
+.button-w i {
+  border-left: #fff solid 1px;
+  padding-left: 0.5rem;
+}
+
+.button-d i {
+  border-left: #000 solid 1px;
+  padding-left: 0.5rem;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  /* rtl:raw:
+  right: 0;
+  */
+  bottom: 0;
+  /* rtl:remove */
+  left: 0;
+  z-index: 100;
+  /* Behind the navbar */
+  padding: 60px 0 0;
+  /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  height: calc(100vh - var(--h-menu-p) - 3.5rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .navbar-toggler {
+  top: .25rem;
+  right: 1rem;
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.nav-h {
+  height: var(--h-menu);
+}
+
+.menu-lateral-icon {
+  width: 1.4rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.accordion-menu {
+  --bs-accordion-bg: transparent !important;
+}
+
+.accordion-button-menu {
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  background-color: transparent !important
+}
+
+.accordion-button::after {
+  background-size: 0.8rem;
+}
+
+.accordion-body-menu {
+  padding: 0;
+  margin-left: 1rem;
+  border-left: solid 1px rgb(223, 223, 223);
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: 0 0 0 0 !important;
+}
+
+.accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.table-dark {
+  --bs-table-bg: #4d5357 !important; 
+}

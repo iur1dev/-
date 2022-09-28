@@ -1,0 +1,85 @@
+:root {
+  --w-menu: 12.5rem;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.025) !important;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+.menu-lateral-w {
+  width: var(--w-menu);
+}
+
+.main-w {
+  margin-left: 0 !important;
+}
+
+@media (min-width: 992px) {
+  .main-w {
+    margin-left: var(--w-menu) !important;
+  }
+}
+
+.card-shadow {
+  border-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.main-mb {
+  padding-bottom: 4rem;
+}
+
+.bg-menu-lateral {
+  background-color: blue;
+}
+
+.azulPresto {
+  background-color: #1c98d5;
+}
+
+.escuroPresto {
+  background-color: #30267f;
+}
+
+.tamanhoLogo {
+  width: 10rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.tamanhoLogoModal {
+  width: 12rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(img/sede.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.branco {
+  background-color: snow;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.facaLogin:hover {
+  opacity: 90%;
+}
+
+.corBranca {
+  color: snow;
+}
